@@ -1,0 +1,105 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"19 E:\PIC\PIC project\LCD.X\LCD.c
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"43
+[v _lcd_init_write lcd_init_write `(v  1 e 1 0 ]
+"52
+[v _delay delay `(v  1 e 1 0 ]
+"57
+[v _lcd_com lcd_com `(v  1 e 1 0 ]
+"82
+[v _lcd_data lcd_data `(v  1 e 1 0 ]
+"88
+[v _lcd_puts lcd_puts `(v  1 e 1 0 ]
+"94
+[v _lcd_set_cursor lcd_set_cursor `(v  1 e 1 0 ]
+"31 E:\PIC\PIC project\LCD.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"352 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"4181
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"4184
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"4187
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"17 E:\PIC\PIC project\LCD.X\LCD.c
+[v _status status `b  1 e 0 0 ]
+"31 E:\PIC\PIC project\LCD.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"44
+} 0
+"94 E:\PIC\PIC project\LCD.X\LCD.c
+[v _lcd_set_cursor lcd_set_cursor `(v  1 e 1 0 ]
+{
+[v lcd_set_cursor@row row `uc  1 a 1 wreg ]
+[v lcd_set_cursor@row row `uc  1 a 1 wreg ]
+[v lcd_set_cursor@col col `uc  1 p 1 8 ]
+[v lcd_set_cursor@row row `uc  1 a 1 11 ]
+"108
+} 0
+"88
+[v _lcd_puts lcd_puts `(v  1 e 1 0 ]
+{
+[v lcd_puts@str str `*.24uc  1 a 1 wreg ]
+[v lcd_puts@str str `*.24uc  1 a 1 wreg ]
+[v lcd_puts@str str `*.24uc  1 a 1 10 ]
+"92
+} 0
+"82
+[v _lcd_data lcd_data `(v  1 e 1 0 ]
+{
+[v lcd_data@a a `uc  1 a 1 wreg ]
+[v lcd_data@a a `uc  1 a 1 wreg ]
+[v lcd_data@a a `uc  1 a 1 8 ]
+"86
+} 0
+"19
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"41
+} 0
+"43
+[v _lcd_init_write lcd_init_write `(v  1 e 1 0 ]
+{
+[v lcd_init_write@a a `uc  1 a 1 wreg ]
+[v lcd_init_write@a a `uc  1 a 1 wreg ]
+[v lcd_init_write@a a `uc  1 a 1 4 ]
+"50
+} 0
+"57
+[v _lcd_com lcd_com `(v  1 e 1 0 ]
+{
+[v lcd_com@a a `uc  1 a 1 wreg ]
+"58
+[v lcd_com@temp temp `uc  1 a 1 7 ]
+"57
+[v lcd_com@a a `uc  1 a 1 wreg ]
+"59
+[v lcd_com@a a `uc  1 a 1 6 ]
+"80
+} 0
+"52
+[v _delay delay `(v  1 e 1 0 ]
+{
+"53
+[v delay@i i `ui  1 a 2 2 ]
+"52
+[v delay@j j `ui  1 p 2 0 ]
+"55
+} 0

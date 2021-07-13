@@ -1,0 +1,296 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"50 E:\PIC\PIC project\motor.X\main.c
+[e E1282 . `uc
+SINGLE_OUTPUT 0
+FULL_BRIDGE_FORWARD 1
+HALF_BRIDGE 2
+FULL_BRIDGE_REVERSE 3
+]
+[e E1288 . `uc
+ACH_BDH 0
+ACH_BDL 1
+ACL_BDH 2
+ACL_BDL 3
+]
+"76
+[e E1264 . `uc
+FOSC_DIV_2 0
+FOSC_DIV_8 1
+FOSC_DIV_32 2
+FRC 3
+]
+[e E1270 . `uc
+VSS_VDD 0
+VSS_AN3 1
+AN2_VDD 2
+AN2_AN3 3
+]
+"11 E:\PIC\PIC project\motor.X\ADC.c
+[e E1264 . `uc
+FOSC_DIV_2 0
+FOSC_DIV_8 1
+FOSC_DIV_32 2
+FRC 3
+]
+[e E1270 . `uc
+VSS_VDD 0
+VSS_AN3 1
+AN2_VDD 2
+AN2_AN3 3
+]
+[v _ADC_init ADC_init `(v  1 e 1 0 ]
+"19
+[v _ADC_read ADC_read `(d  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"50 E:\PIC\PIC project\motor.X\main.c
+[v _PWM1_H_init PWM1_H_init `(v  1 e 1 0 ]
+"62
+[v _PWM1_H_duty PWM1_H_duty `(v  1 e 1 0 ]
+"74
+[v _main main `(v  1 e 1 0 ]
+[s S72 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 TOUTPS 1 0 :4:3 
+]
+"793 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[s S76 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TOUTPS0 1 0 :1:3 
+`uc 1 TOUTPS1 1 0 :1:4 
+`uc 1 TOUTPS2 1 0 :1:5 
+`uc 1 TOUTPS3 1 0 :1:6 
+]
+[u S84 . 1 `S72 1 . 1 0 `S76 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES84  1 e 1 @18 ]
+"927
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
+[s S32 . 1 `uc 1 CCP1M 1 0 :4:0 
+`uc 1 DC1B 1 0 :2:4 
+`uc 1 P1M 1 0 :2:6 
+]
+"968
+[s S36 . 1 `uc 1 CCP1M0 1 0 :1:0 
+`uc 1 CCP1M1 1 0 :1:1 
+`uc 1 CCP1M2 1 0 :1:2 
+`uc 1 CCP1M3 1 0 :1:3 
+`uc 1 DC1B0 1 0 :1:4 
+`uc 1 DC1B1 1 0 :1:5 
+`uc 1 P1M0 1 0 :1:6 
+`uc 1 P1M1 1 0 :1:7 
+]
+[s S45 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 CCP1Y 1 0 :1:4 
+`uc 1 CCP1X 1 0 :1:5 
+]
+[u S49 . 1 `S32 1 . 1 0 `S36 1 . 1 0 `S45 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES49  1 e 1 @23 ]
+"1238
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+[s S170 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1276
+[s S175 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S184 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S187 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S190 . 1 `S170 1 . 1 0 `S175 1 . 1 0 `S184 1 . 1 0 `S187 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES190  1 e 1 @31 ]
+"2041
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"2970
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+[s S216 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2991
+[u S222 . 1 `S216 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES222  1 e 1 @159 ]
+"3905
+[v _GO_nDONE GO_nDONE `VEb  1 e 0 @249 ]
+"4400
+[v _TRISA0 TRISA0 `VEb  1 e 0 @1064 ]
+"4454
+[v _TRISC2 TRISC2 `VEb  1 e 0 @1082 ]
+"4487
+[v _TRISD5 TRISD5 `VEb  1 e 0 @1093 ]
+"4490
+[v _TRISD6 TRISD6 `VEb  1 e 0 @1094 ]
+"4493
+[v _TRISD7 TRISD7 `VEb  1 e 0 @1095 ]
+"31 E:\PIC\PIC project\motor.X\main.c
+[v _PWM_freq PWM_freq `l  1 e 4 0 ]
+"74
+[v _main main `(v  1 e 1 0 ]
+{
+"84
+} 0
+"50
+[v _PWM1_H_init PWM1_H_init `(v  1 e 1 0 ]
+{
+[v PWM1_H_init@m m `E1282  1 a 1 wreg ]
+[v PWM1_H_init@m m `E1282  1 a 1 wreg ]
+[v PWM1_H_init@p p `E1288  1 p 1 6 ]
+[v PWM1_H_init@m m `E1282  1 a 1 13 ]
+"60
+} 0
+"62
+[v _PWM1_H_duty PWM1_H_duty `(v  1 e 1 0 ]
+{
+[v PWM1_H_duty@duty duty `ui  1 p 2 0 ]
+"72
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 78 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 77 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 68 ]
+"70
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S544 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S549 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S552 . 4 `l 1 i 4 0 `d 1 f 4 0 `S544 1 fAsBytes 4 0 `S549 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S552  1 a 4 62 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 56 ]
+[s S621 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S624 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S621 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S624  1 a 2 66 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 61 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 60 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 55 ]
+"8
+[v ___flmul@b b `d  1 p 4 42 ]
+[v ___flmul@a a `d  1 p 4 46 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
+"60
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 36 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 29 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 34 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 41 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 40 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 33 ]
+"8
+[v ___fldiv@a a `d  1 p 4 16 ]
+[v ___fldiv@b b `d  1 p 4 20 ]
+"185
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 2 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 1 ]
+[v ___aldiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"41
+} 0
+"19 E:\PIC\PIC project\motor.X\ADC.c
+[v _ADC_read ADC_read `(d  1 e 4 0 ]
+{
+[v ADC_read@channel channel `uc  1 a 1 wreg ]
+[v ADC_read@channel channel `uc  1 a 1 wreg ]
+"21
+[v ADC_read@channel channel `uc  1 a 1 13 ]
+"33
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 12 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 11 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 6 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 10 ]
+"44
+} 0
+"11 E:\PIC\PIC project\motor.X\ADC.c
+[v _ADC_init ADC_init `(v  1 e 1 0 ]
+{
+[v ADC_init@s s `E1264  1 a 1 wreg ]
+[v ADC_init@s s `E1264  1 a 1 wreg ]
+[v ADC_init@r r `E1270  1 p 1 0 ]
+"13
+[v ADC_init@s s `E1264  1 a 1 3 ]
+"18
+} 0

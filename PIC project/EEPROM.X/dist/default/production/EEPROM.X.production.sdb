@@ -1,0 +1,269 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"505 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeread.c
+[v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eewrite.c
+[v _eeprom_write eeprom_write `(v  1 e 1 0 ]
+"30 E:\PIC\PIC project\EEPROM.X\lcd.c
+[v _delay delay `(v  1 e 1 0 ]
+"36
+[v _lcd_init_write lcd_init_write `(v  1 e 1 0 ]
+"47
+[v _lcd_com lcd_com `(v  1 e 1 0 ]
+"74
+[v _lcd_data lcd_data `(v  1 e 1 0 ]
+"80
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"103
+[v _lcd_puts lcd_puts `(v  1 e 1 0 ]
+"45 E:\PIC\PIC project\EEPROM.X\main.c
+[v _main main `(v  1 e 1 0 ]
+[s S230 . 1 `uc 1 C 1 0 :1:0 
+`uc 1 DC 1 0 :1:1 
+`uc 1 Z 1 0 :1:2 
+`uc 1 nPD 1 0 :1:3 
+`uc 1 nTO 1 0 :1:4 
+`uc 1 RP 1 0 :2:5 
+`uc 1 IRP 1 0 :1:7 
+]
+"99 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[s S238 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RP0 1 0 :1:5 
+`uc 1 RP1 1 0 :1:6 
+]
+[s S242 . 1 `uc 1 CARRY 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ZERO 1 0 :1:2 
+]
+[u S246 . 1 `S230 1 . 1 0 `S238 1 . 1 0 `S242 1 . 1 0 ]
+[v _STATUSbits STATUSbits `VES246  1 e 1 @3 ]
+"352
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S148 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"369
+[u S157 . 1 `S148 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES157  1 e 1 @8 ]
+[s S26 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"482
+[s S35 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S40 . 1 `S26 1 . 1 0 `S35 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES40  1 e 1 @11 ]
+[s S58 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1366
+[s S65 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S69 . 1 `S58 1 . 1 0 `S65 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES69  1 e 1 @129 ]
+"1478
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"3245
+[v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
+"3257
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+"3387
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3449
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"3499
+[v _EECON1 EECON1 `VEuc  1 e 1 @396 ]
+[s S210 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"3514
+[u S217 . 1 `S210 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES217  1 e 1 @396 ]
+"3544
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+"4103
+[v _RB0 RB0 `VEb  1 e 0 @48 ]
+"4115
+[v _RB4 RB4 `VEb  1 e 0 @52 ]
+"358 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"17 E:\PIC\PIC project\EEPROM.X\lcd.c
+[v _status status `b  1 e 0 0 ]
+"27
+[v _num num `[10]i  1 e 20 0 ]
+"28
+[v _c c `uc  1 e 1 0 ]
+"33 E:\PIC\PIC project\EEPROM.X\main.c
+[v _temp temp `uc  1 e 1 0 ]
+"34
+[v _cnt cnt `uc  1 e 1 0 ]
+"35
+[v _buffer1 buffer1 `[16]uc  1 e 16 0 ]
+"36
+[v _buffer2 buffer2 `[16]uc  1 e 16 0 ]
+"45
+[v _main main `(v  1 e 1 0 ]
+{
+"73
+} 0
+"505 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"545
+[v sprintf@val val `ui  1 a 2 9 ]
+"512
+[v sprintf@c c `uc  1 a 1 12 ]
+"521
+[v sprintf@prec prec `c  1 a 1 8 ]
+"525
+[v sprintf@flag flag `uc  1 a 1 7 ]
+"507
+[v sprintf@ap ap `[1]*.4v  1 a 1 6 ]
+"505
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.24DCuc  1 p 1 0 ]
+"550
+[v sprintf@sp sp `*.4uc  1 a 1 11 ]
+"1567
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"103 E:\PIC\PIC project\EEPROM.X\lcd.c
+[v _lcd_puts lcd_puts `(v  1 e 1 0 ]
+{
+[v lcd_puts@str str `*.4uc  1 a 1 wreg ]
+"105
+[v lcd_puts@i i `ui  1 a 2 10 ]
+"103
+[v lcd_puts@str str `*.4uc  1 a 1 wreg ]
+"105
+[v lcd_puts@str str `*.4uc  1 a 1 12 ]
+"108
+} 0
+"74
+[v _lcd_data lcd_data `(v  1 e 1 0 ]
+{
+[v lcd_data@a a `uc  1 a 1 wreg ]
+[v lcd_data@a a `uc  1 a 1 wreg ]
+"76
+[v lcd_data@a a `uc  1 a 1 8 ]
+"79
+} 0
+"80
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"102
+} 0
+"36
+[v _lcd_init_write lcd_init_write `(v  1 e 1 0 ]
+{
+[v lcd_init_write@a a `uc  1 a 1 wreg ]
+[v lcd_init_write@a a `uc  1 a 1 wreg ]
+"38
+[v lcd_init_write@a a `uc  1 a 1 4 ]
+"44
+} 0
+"47
+[v _lcd_com lcd_com `(v  1 e 1 0 ]
+{
+[v lcd_com@a a `uc  1 a 1 wreg ]
+"49
+[v lcd_com@temp temp `uc  1 a 1 7 ]
+"47
+[v lcd_com@a a `uc  1 a 1 wreg ]
+"50
+[v lcd_com@a a `uc  1 a 1 6 ]
+"72
+} 0
+"30
+[v _delay delay `(v  1 e 1 0 ]
+{
+"32
+[v delay@i i `ui  1 a 2 2 ]
+"30
+[v delay@j j `ui  1 p 2 0 ]
+"34
+} 0
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eewrite.c
+[v _eeprom_write eeprom_write `(v  1 e 1 0 ]
+{
+[v eeprom_write@addr addr `uc  1 a 1 wreg ]
+[v eeprom_write@addr addr `uc  1 a 1 wreg ]
+[v eeprom_write@value value `uc  1 p 1 0 ]
+[v eeprom_write@addr addr `uc  1 a 1 2 ]
+"9
+} 0
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeread.c
+[v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
+{
+[v eeprom_read@addr addr `uc  1 a 1 wreg ]
+[v eeprom_read@addr addr `uc  1 a 1 wreg ]
+"9
+[v eeprom_read@addr addr `uc  1 a 1 1 ]
+"19
+} 0

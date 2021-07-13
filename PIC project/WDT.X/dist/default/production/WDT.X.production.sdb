@@ -1,0 +1,165 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"30 E:\PIC\PIC project\WDT.X\lcd.c
+[v _delay delay `(v  1 e 1 0 ]
+"36
+[v _lcd_init_write lcd_init_write `(v  1 e 1 0 ]
+"47
+[v _lcd_com lcd_com `(v  1 e 1 0 ]
+"74
+[v _lcd_data lcd_data `(v  1 e 1 0 ]
+"80
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"103
+[v _lcd_puts lcd_puts `(v  1 e 1 0 ]
+"31 E:\PIC\PIC project\WDT.X\main.c
+[v _main main `(v  1 e 1 0 ]
+[s S50 . 1 `uc 1 C 1 0 :1:0 
+`uc 1 DC 1 0 :1:1 
+`uc 1 Z 1 0 :1:2 
+`uc 1 nPD 1 0 :1:3 
+`uc 1 nTO 1 0 :1:4 
+`uc 1 RP 1 0 :2:5 
+`uc 1 IRP 1 0 :1:7 
+]
+"99 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[s S58 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RP0 1 0 :1:5 
+`uc 1 RP1 1 0 :1:6 
+]
+[s S62 . 1 `uc 1 CARRY 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ZERO 1 0 :1:2 
+]
+[u S66 . 1 `S50 1 . 1 0 `S58 1 . 1 0 `S62 1 . 1 0 ]
+[v _STATUSbits STATUSbits `VES66  1 e 1 @3 ]
+"352
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S152 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"369
+[u S161 . 1 `S152 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES161  1 e 1 @8 ]
+[s S103 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1366
+[s S110 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S114 . 1 `S103 1 . 1 0 `S110 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES114  1 e 1 @129 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+[s S28 . 1 `uc 1 SWDTEN 1 0 :1:0 
+`uc 1 WDTPS 1 0 :4:1 
+]
+"3029
+[s S31 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 WDTPS0 1 0 :1:1 
+`uc 1 WDTPS1 1 0 :1:2 
+`uc 1 WDTPS2 1 0 :1:3 
+`uc 1 WDTPS3 1 0 :1:4 
+]
+[u S37 . 1 `S28 1 . 1 0 `S31 1 . 1 0 ]
+[v _WDTCONbits WDTCONbits `VES37  1 e 1 @261 ]
+"4151
+[v _RC6 RC6 `VEb  1 e 0 @62 ]
+"4466
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"17 E:\PIC\PIC project\WDT.X\lcd.c
+[v _status status `b  1 e 0 0 ]
+"27
+[v _num num `[10]i  1 e 20 0 ]
+"28
+[v _c c `uc  1 e 1 0 ]
+"31 E:\PIC\PIC project\WDT.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"32
+[v main@count count `i  1 a 2 12 ]
+"56
+} 0
+"103 E:\PIC\PIC project\WDT.X\lcd.c
+[v _lcd_puts lcd_puts `(v  1 e 1 0 ]
+{
+[v lcd_puts@str str `*.24uc  1 a 1 wreg ]
+"105
+[v lcd_puts@i i `ui  1 a 2 9 ]
+"103
+[v lcd_puts@str str `*.24uc  1 a 1 wreg ]
+"105
+[v lcd_puts@str str `*.24uc  1 a 1 11 ]
+"108
+} 0
+"74
+[v _lcd_data lcd_data `(v  1 e 1 0 ]
+{
+[v lcd_data@a a `uc  1 a 1 wreg ]
+[v lcd_data@a a `uc  1 a 1 wreg ]
+"76
+[v lcd_data@a a `uc  1 a 1 8 ]
+"79
+} 0
+"80
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"102
+} 0
+"36
+[v _lcd_init_write lcd_init_write `(v  1 e 1 0 ]
+{
+[v lcd_init_write@a a `uc  1 a 1 wreg ]
+[v lcd_init_write@a a `uc  1 a 1 wreg ]
+"38
+[v lcd_init_write@a a `uc  1 a 1 4 ]
+"44
+} 0
+"47
+[v _lcd_com lcd_com `(v  1 e 1 0 ]
+{
+[v lcd_com@a a `uc  1 a 1 wreg ]
+"49
+[v lcd_com@temp temp `uc  1 a 1 7 ]
+"47
+[v lcd_com@a a `uc  1 a 1 wreg ]
+"50
+[v lcd_com@a a `uc  1 a 1 6 ]
+"72
+} 0
+"30
+[v _delay delay `(v  1 e 1 0 ]
+{
+"32
+[v delay@i i `ui  1 a 2 2 ]
+"30
+[v delay@j j `ui  1 p 2 0 ]
+"34
+} 0

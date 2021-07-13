@@ -1,0 +1,364 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"505 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"30 E:\PIC\PIC project\project.X\lcd.c
+[v _delay delay `(v  1 e 1 0 ]
+"36
+[v _lcd_init_write lcd_init_write `(v  1 e 1 0 ]
+"47
+[v _lcd_com lcd_com `(v  1 e 1 0 ]
+"74
+[v _lcd_data lcd_data `(v  1 e 1 0 ]
+"80
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"103
+[v _lcd_puts lcd_puts `(v  1 e 1 0 ]
+"53 E:\PIC\PIC project\project.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"113
+[v _DHT11_init DHT11_init `(v  1 e 1 0 ]
+"122
+[v _DHT11_checkResponse DHT11_checkResponse `(v  1 e 1 0 ]
+"134
+[v _DHT11_read DHT11_read `(uc  1 e 1 0 ]
+"150
+[v _system_init system_init `(v  1 e 1 0 ]
+"156
+[v _clear clear `(v  1 e 1 0 ]
+"163
+[v _introduction introduction `(v  1 e 1 0 ]
+"11 E:\PIC\PIC project\project.X\uart.c
+[v _UART_init UART_init `(v  1 e 1 0 ]
+"32
+[v _UART_sendChar UART_sendChar `(v  1 e 1 0 ]
+"37
+[v _UART_getChar UART_getChar `(uc  1 e 1 0 ]
+"47
+[v _UART_sendString UART_sendString `(v  1 e 1 0 ]
+"55
+[v _UART_getString UART_getString `(v  1 e 1 0 ]
+"216 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S194 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"233
+[u S203 . 1 `S194 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES203  1 e 1 @6 ]
+[s S107 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"357
+[u S116 . 1 `S107 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES116  1 e 1 @8 ]
+"1059
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+[s S86 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1516
+[u S95 . 1 `S86 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES95  1 e 1 @136 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2416
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2515
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2614
+[v _OERR OERR `VEb  1 e 0 @193 ]
+"2743
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2794
+[v _RX9 RX9 `VEb  1 e 0 @198 ]
+"2812
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2842
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"2977
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2980
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"3022
+[v _TX9 TX9 `VEb  1 e 0 @1222 ]
+"3031
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"3037
+[v _TXIF TXIF `VEb  1 e 0 @100 ]
+"358 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"17 E:\PIC\PIC project\project.X\lcd.c
+[v _status status `b  1 e 0 0 ]
+"27
+[v _num num `[10]i  1 e 20 0 ]
+"28
+[v _c c `uc  1 e 1 0 ]
+"36 E:\PIC\PIC project\project.X\main.c
+[v _buffer buffer `[20]uc  1 e 20 0 ]
+[v _value value `[20]uc  1 e 20 0 ]
+"38
+[v _Check_bit Check_bit `uc  1 e 1 0 ]
+[v _Temp_byte_1 Temp_byte_1 `uc  1 e 1 0 ]
+[v _Temp_byte_2 Temp_byte_2 `uc  1 e 1 0 ]
+[v _RH_byte_1 RH_byte_1 `uc  1 e 1 0 ]
+[v _RH_byte_2 RH_byte_2 `uc  1 e 1 0 ]
+"39
+[v _humidity humidity `uc  1 e 1 0 ]
+[v _RH RH `uc  1 e 1 0 ]
+[v _checksum checksum `uc  1 e 1 0 ]
+"53
+[v _main main `(v  1 e 1 0 ]
+{
+"111
+} 0
+"150
+[v _system_init system_init `(v  1 e 1 0 ]
+{
+"154
+} 0
+"80 E:\PIC\PIC project\project.X\lcd.c
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"102
+} 0
+"36
+[v _lcd_init_write lcd_init_write `(v  1 e 1 0 ]
+{
+[v lcd_init_write@a a `uc  1 a 1 wreg ]
+[v lcd_init_write@a a `uc  1 a 1 wreg ]
+"38
+[v lcd_init_write@a a `uc  1 a 1 4 ]
+"44
+} 0
+"163 E:\PIC\PIC project\project.X\main.c
+[v _introduction introduction `(v  1 e 1 0 ]
+{
+"177
+} 0
+"156
+[v _clear clear `(v  1 e 1 0 ]
+{
+"161
+} 0
+"103 E:\PIC\PIC project\project.X\lcd.c
+[v _lcd_puts lcd_puts `(v  1 e 1 0 ]
+{
+[v lcd_puts@str str `*.24uc  1 a 1 wreg ]
+"105
+[v lcd_puts@i i `ui  1 a 2 9 ]
+"103
+[v lcd_puts@str str `*.24uc  1 a 1 wreg ]
+"105
+[v lcd_puts@str str `*.24uc  1 a 1 11 ]
+"108
+} 0
+"74
+[v _lcd_data lcd_data `(v  1 e 1 0 ]
+{
+[v lcd_data@a a `uc  1 a 1 wreg ]
+[v lcd_data@a a `uc  1 a 1 wreg ]
+"76
+[v lcd_data@a a `uc  1 a 1 8 ]
+"79
+} 0
+"47
+[v _lcd_com lcd_com `(v  1 e 1 0 ]
+{
+[v lcd_com@a a `uc  1 a 1 wreg ]
+"49
+[v lcd_com@temp temp `uc  1 a 1 7 ]
+"47
+[v lcd_com@a a `uc  1 a 1 wreg ]
+"50
+[v lcd_com@a a `uc  1 a 1 6 ]
+"72
+} 0
+"30
+[v _delay delay `(v  1 e 1 0 ]
+{
+"32
+[v delay@i i `ui  1 a 2 2 ]
+"30
+[v delay@j j `ui  1 p 2 0 ]
+"34
+} 0
+"505 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"545
+[v sprintf@val val `ui  1 a 2 11 ]
+"512
+[v sprintf@c c `uc  1 a 1 14 ]
+"521
+[v sprintf@prec prec `c  1 a 1 10 ]
+"525
+[v sprintf@flag flag `uc  1 a 1 9 ]
+"507
+[v sprintf@ap ap `[1]*.4v  1 a 1 8 ]
+"505
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.24DCuc  1 p 1 0 ]
+"550
+[v sprintf@sp sp `*.4uc  1 a 1 13 ]
+"1567
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 1 ]
+[v ___awmod@counter counter `uc  1 a 1 0 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 9 ]
+[v ___awmod@dividend dividend `i  1 p 2 11 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
+"47 E:\PIC\PIC project\project.X\uart.c
+[v _UART_sendString UART_sendString `(v  1 e 1 0 ]
+{
+[v UART_sendString@str str `*.26uc  1 p 2 1 ]
+"53
+} 0
+"32
+[v _UART_sendChar UART_sendChar `(v  1 e 1 0 ]
+{
+[v UART_sendChar@bt bt `uc  1 a 1 wreg ]
+[v UART_sendChar@bt bt `uc  1 a 1 wreg ]
+[v UART_sendChar@bt bt `uc  1 a 1 0 ]
+"36
+} 0
+"11
+[v _UART_init UART_init `(v  1 e 1 0 ]
+{
+[v UART_init@baudRate baudRate `l  1 p 4 6 ]
+"31
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 2 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 1 ]
+[v ___aldiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"41
+} 0
+"55 E:\PIC\PIC project\project.X\uart.c
+[v _UART_getString UART_getString `(v  1 e 1 0 ]
+{
+[v UART_getString@buf buf `*.4uc  1 a 1 wreg ]
+"57
+[v UART_getString@i i `ui  1 a 2 5 ]
+"55
+[v UART_getString@buf buf `*.4uc  1 a 1 wreg ]
+[v UART_getString@length length `ui  1 p 2 0 ]
+"57
+[v UART_getString@buf buf `*.4uc  1 a 1 4 ]
+"61
+} 0
+"37
+[v _UART_getChar UART_getChar `(uc  1 e 1 0 ]
+{
+"46
+} 0
+"134 E:\PIC\PIC project\project.X\main.c
+[v _DHT11_read DHT11_read `(uc  1 e 1 0 ]
+{
+"135
+[v DHT11_read@for_count for_count `uc  1 a 1 3 ]
+[v DHT11_read@data data `uc  1 a 1 2 ]
+"148
+} 0
+"113
+[v _DHT11_init DHT11_init `(v  1 e 1 0 ]
+{
+"120
+} 0
+"122
+[v _DHT11_checkResponse DHT11_checkResponse `(v  1 e 1 0 ]
+{
+"132
+} 0

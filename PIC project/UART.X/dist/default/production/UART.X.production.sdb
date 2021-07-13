@@ -1,0 +1,106 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"30 E:\PIC\PIC project\UART.X\main.c
+[v _UART_init UART_init `(v  1 e 1 0 ]
+"44
+[v _UART_sendChar UART_sendChar `(v  1 e 1 0 ]
+"50
+[v _UART_sendString UART_sendString `(v  1 e 1 0 ]
+"58
+[v _UART_getChar UART_getChar `(uc  1 e 1 0 ]
+"69
+[v _main main `(v  1 e 1 0 ]
+"1133 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1140
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"2642
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"3668
+[v _BRG16 BRG16 `VEb  1 e 0 @3131 ]
+"3695
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"3836
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"4001
+[v _OERR OERR `VEb  1 e 0 @193 ]
+"4175
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"4193
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"4229
+[v _RX9 RX9 `VEb  1 e 0 @198 ]
+"4259
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"4313
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"4466
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"4469
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"4484
+[v _TRISD4 TRISD4 `VEb  1 e 0 @1092 ]
+"4529
+[v _TX9 TX9 `VEb  1 e 0 @1222 ]
+"4538
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"4544
+[v _TXIF TXIF `VEb  1 e 0 @100 ]
+"69 E:\PIC\PIC project\UART.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"89
+} 0
+"50
+[v _UART_sendString UART_sendString `(v  1 e 1 0 ]
+{
+[v UART_sendString@str str `*.24uc  1 a 1 wreg ]
+[v UART_sendString@str str `*.24uc  1 a 1 wreg ]
+[v UART_sendString@str str `*.24uc  1 a 1 2 ]
+"56
+} 0
+"44
+[v _UART_sendChar UART_sendChar `(v  1 e 1 0 ]
+{
+[v UART_sendChar@data data `uc  1 a 1 wreg ]
+[v UART_sendChar@data data `uc  1 a 1 wreg ]
+[v UART_sendChar@data data `uc  1 a 1 0 ]
+"48
+} 0
+"30
+[v _UART_init UART_init `(v  1 e 1 0 ]
+{
+[v UART_init@baud baud `l  1 p 4 6 ]
+"42
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 2 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 1 ]
+[v ___aldiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"41
+} 0
+"58 E:\PIC\PIC project\UART.X\main.c
+[v _UART_getChar UART_getChar `(uc  1 e 1 0 ]
+{
+"67
+} 0
